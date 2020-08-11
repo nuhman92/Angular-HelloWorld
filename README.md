@@ -26,3 +26,8 @@ to build Angular components, services, pipes, directives and more.
 1. Run `npm install`
 
 1. Run `ng serve -o`
+
+
+## Docker 
+1. docker build -t app:dev .
+2. docker run -v ${PWD}:/app -v /app/node_modules -p 4201:4200 --rm app:dev
